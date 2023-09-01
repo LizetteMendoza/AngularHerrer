@@ -5,11 +5,25 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css']
 })
-export class HeroComponent implements OnInit {
+export class HeroComponent  {
 
-  constructor() { }
+  public name: string = 'ironman';
+  public age: number = 45;
 
-  ngOnInit(): void {
+  get capitalizadName():string{
+      return this.name.toUpperCase();
+  }
+
+  getHeroDescriptio(): string{
+    return `${this.name} - ${this.age}`;
+  }
+
+  changeHero():void{
+    this.name = 'Sipder man';
+  }
+
+  changeAge():void{
+    this.age = 21;
   }
 
 }

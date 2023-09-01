@@ -1,1 +1,15 @@
-<p>hero works!</p>
+<h1>Spider man</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd>{{name}}</dd>
+  <td>Edad:</td>
+  <dd>{{age}}</dd>
+  <td>Metodo:</td>
+  <dd>{{getHeroDescriptio()}}</dd>
+  <td>Capitalizado:</td>
+  <dd>{{capitalizadName}}</dd>
+</dl>
+
+<button class="btn btn-primary mx-2" (click)="changeHero()">Cambiar nombre</button>
+<button class="btn btn-primary" (click)="changeAge()">Cambiar edad</button>
