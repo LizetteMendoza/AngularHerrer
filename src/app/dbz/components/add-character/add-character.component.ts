@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-add-character',
+  selector: 'dbz-add-character',
   templateUrl: './add-character.component.html',
   styleUrls: ['./add-character.component.css']
 })
