@@ -23,7 +23,13 @@ export class MainPageComponent {
   ];
 
   onNewCharacter(character:Character): void{
-    console.log('MainPage');
-    console.log(character);
+    this.characters.push(character);
+  }
+
+
+  //nuevo evento tarea
+  onDeleteCharacter(index:number): void{
+    //es necesaro agregar el 1 para definir que solo eliminará un elemento
+    this.characters.splice(index,1);
   }
 }
