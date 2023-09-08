@@ -5,11 +5,11 @@
 
     <!--onDelete onDelete-->
     <!--Componente del listado de personajes-->
-    <dbz-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dbz-list>
+    <dbz-list [characterList]="dbzService.characters" (onDelete)="dbzService.deleteCharacterById($event)"></dbz-list>
   </div>
 
   <div class="col">
     <!--Componente con el formularios para agregar personajes-->
-    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+    <dbz-add-character (onNewCharacter)="dbzService.onNewCharacter($event)"></dbz-add-character>
   </div>
 </div>
